@@ -1,0 +1,12 @@
+{
+    "Lua.diagnostics.globals": [
+        "exports",
+        "SetNuiFocus",
+        "SendNUIMessage",
+        "SetNuiFocusKeepInput",
+        "GetGameTimer"
+    ],
+    "Lua.diagnostics.disable": [
+        "undefined-global"
+    ]
+}
