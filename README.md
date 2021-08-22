@@ -46,18 +46,13 @@
 
 ### Useful Info
 
-<p align="center">
-  This resource was built using Linden's fork of ESX Legacy although, it should work perfectly fine on the official release.
-  <br />
-  <br />
-  PolyZone is required for qtarget to work, check the screen shot below for loading order
-  <br />
-  <br />
-  My fork of ms-notify is used to provide notification sounds. The official release will still work if you search and remove the soundFile parameter from client.lua & server.lua
-  <br />
-  <br />
-  If you're not using <a href="https://github.com/thelindat/linden_outlawalert">linden_outlawalert</a> then set `Config.NotifyPolice = false`
-</p>
+This resource was built using Linden's fork of ESX Legacy although, it should work perfectly fine on the official release.
+<br />
+PolyZone is required for qtarget to work, check the screen shot below for loading order
+<br />
+My fork of ms-notify is used to provide notification sounds. The official release will still work if you search and remove the soundFile parameter from client.lua & server.lua
+<br />
+If you're not using <a href="https://github.com/thelindat/linden_outlawalert">linden_outlawalert</a> then set `Config.NotifyPolice = false`
 
 ### Installation
 
