@@ -1,6 +1,5 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![Commits][commit-shield]][commit-url]
@@ -17,12 +16,12 @@
   <h3 align="center">Ped Missions</h3>
 
   <p align="center">
-    Collect and drop off packages using qtarget and item metadata via Linden Inventory
+    Package collection and delivery
     <br />
     <a href="cfx.re/join/5vlpjr"><strong>Test On Our Sever</strong></a>
     <br />
     <br />
-    <a href="https://github.com/SiiR-Affinity/siir_pedMissions">Demo Coming Soon</a>
+    <a href="https://www.youtube.com/watch?v=El7rCIKrfG4&ab_channel=AffinityRoleplay">Demo</a>
     ·
     <a href="https://github.com/SiiR-Affinity/siir_pedMissions/issues">Report Bug</a>
     ·
@@ -47,12 +46,15 @@
 
 ### Useful Info
 
-  ```
-  This resource was built using Linden's fork of ESX Legacy
-  ```
-  ```
-  PolyZone is required for qtarget to work
-  ```
+<p align="center">
+  This resource was built using Linden's fork of ESX Legacy although, it should work perfectly fine on the official release.
+  <br />
+  PolyZone is required for qtarget to work, check the screen shot below for loading order
+  <br />
+  My fork of ms-notify is used to provide notification sounds. The official release will still work if you search and remove the soundFile parameter from client.lua & server.lua
+  <br />
+  If you're not using <a href="https://github.com/thelindat/linden_outlawalert">linden_outlawalert</a> then set `Config.NotifyPolice = false`
+</p>
 
 ### Installation
 
@@ -67,10 +69,14 @@
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Info coming soon
+See <a href="https://www.youtube.com/watch?v=El7rCIKrfG4&ab_channel=AffinityRoleplay">Demo</a> for player usage guide
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+Config contains core variables and coords / item values are stored in shared/dropoff.lua & shared/pickup.lua
 
+Timer starts from the moment a package is successfully collected. The timer is based on distance to drop-off location / Config.MPS
+Payout is based on overall distance, time remaining and number of cops online
+
+Increase Config.MPS to give players less time to make the delivery, keep in mind the distance set for delivery. If distance is low and MPS is high, players will never make the delivery in time.
 
 
 <!-- ROADMAP -->

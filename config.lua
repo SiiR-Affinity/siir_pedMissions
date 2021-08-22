@@ -10,7 +10,7 @@ Config.Payment = {
 Config.MinDeliveryDistance = 1000.0 -- How far away should delivery be from pickup - Must be float
 Config.MPS = 21 -- Meters Per Second - Determines amount of time for delivery
 Config.RestartOnDelivery = true -- Start new mission if successfully delivered
-Config.NotifyPolice = true -- wf-alerts notify on package spawn and drop-off
+Config.NotifyPolice = true -- wf-alerts notify on package spawn and drop-off - Set to false if not using linden_outlawalert
 Config.NotifyChance = 35 -- Not needed if NotifyPolice is false
 Config.PackageSpawnPoliceMessage = _U('police_package') -- Not needed if NotifyPolice is false
 

@@ -87,6 +87,10 @@ ConfirmMission = function()
 				local playerCoords = GetEntityCoords(playerPed)
 				local distance = #(playerCoords - pickupSelect.coords)
 				if distance <= 50.0 then
+					RequestModel(pickupSelect.prop)
+					while not HasModelLoaded(pickupSelect.prop) do
+						Citizen.Wait(0)
+					end
 					package = CreateObject(pickupSelect.prop, pickupSelect.coords.x, pickupSelect.coords.y, pickupSelect.coords.z, true, false, true)
 					SetEntityAsMissionEntity(package, true, true)
 					PlaceObjectOnGroundProperly(package)
